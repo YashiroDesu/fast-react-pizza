@@ -1,0 +1,21 @@
+// .eslintrc.json
+{
+  "extends": [
+    // enable all recommended rules to warn
+    "react-app",
+    "plugin:readable-tailwind/warning",
+    // enable all recommended rules to error
+    "plugin:readable-tailwind/error"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": "latest"
+  },
+  "plugins": ["readable-tailwind"],
+  "rules": {
+    // or configure rules individually
+    "readable-tailwind/multiline": ["warn", { "printWidth": 100 }]
+  }
+}
